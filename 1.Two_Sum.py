@@ -18,3 +18,6 @@ class Solution(object):
 if __name__ ==  '__main__':
     instance = Solution()
     print (instance.twoSum([2,3,4], 6))
+    
+    ## input [2,3,4] target 6
+    ## output [0,2]
