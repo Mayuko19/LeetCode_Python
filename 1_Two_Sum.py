@@ -1,6 +1,4 @@
 class Solution(object):
-
-
     def twoSum(self, nums, target):
         nums_index = [(v, index) for index, v in enumerate(nums)]
         nums_index.sort()
@@ -13,11 +11,4 @@ class Solution(object):
                 begin += 1
             else:
                 end -= 1
-
-
-if __name__ ==  '__main__':
-    instance = Solution()
-    print (instance.twoSum([2,3,4], 6))
-    
-    ## input [2,3,4] target 6
-    ## output [0,2]
+                
