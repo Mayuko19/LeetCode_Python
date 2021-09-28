@@ -13,10 +13,9 @@ class Solution:
             return 0
         queue = deque([(root, 1)])
         while queue:
-            curr, val = queue.popleft()
-            if not curr.left and not curr.right and not queue:
-                return val
+            curr, level = queue.popleft()
             if curr.left:
-                queue.append((curr.left, val+1))
+                queue.append((curr.left, levle+1))
             if curr.right:
-                queue.append((curr.right, val+1))
+                queue.append((curr.right, level+1))
+        return level
