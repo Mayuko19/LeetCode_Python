@@ -8,6 +8,10 @@ class Solution:
             for j in range(i+1, len(nums)):
                 if nums[j] == mid:
                     return i, j
+""""
+Runtime: 2536 ms, faster than 30.12% of Python3 online submissions for Two Sum.
+Memory Usage: 14.9 MB, less than 80.65% of Python3 online submissions for Two Sum.
+""""
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
