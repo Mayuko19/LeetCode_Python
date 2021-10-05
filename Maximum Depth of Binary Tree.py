@@ -15,7 +15,11 @@ class Solution:
         while queue:
             curr, level = queue.popleft()
             if curr.left:
-                queue.append((curr.left, levle+1))
+                queue.append((curr.left, level+1))
             if curr.right:
                 queue.append((curr.right, level+1))
         return level
+""""
+Runtime: 44 ms, faster than 56.41% of Python3 online submissions for Maximum Depth of Binary Tree.
+Memory Usage: 15.3 MB, less than 89.26% of Python3 online submissions for Maximum Depth of Binary Tree.
+""""
